@@ -24,7 +24,7 @@ const ClickToEdit = () => {
           <input className='edit_input' type='text' onBlur={ageBlur} />
         </div>
         <div className='form_div'>
-          이름<span>{nameCh}</span> 나이<span>{ageCh}</span>
+          이름:<span>{nameCh}</span> 나이:<span>{ageCh}</span>
         </div>
       </form>
     </>

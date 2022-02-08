@@ -7,7 +7,7 @@
   padding: 5px;
   border-radius: 20px;
   height: auto;
-  width: 97.5vw;
+  width: 99%;
   left: 0px;
   margin: 30px 0px;
 }
@@ -19,15 +19,15 @@
 .auto_form input {
   border: none;
   position: relative;
-  margin-left: 19px;
-  width: 90vw;
+  padding-left: 20px;
+  width: 85%;
   height: 40px;
 }
 .auto_form span {
   position: relative;
   float: right;
-  margin-right: 12px;
-  margin-top: 6px;
+  top: 6px;
+  right: 15px;
   cursor: pointer;
   font-weight: bold;
 }
