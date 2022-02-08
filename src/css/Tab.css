@@ -1,8 +1,6 @@
 .tab_ul {
   position: relative;
-
   background-color: #ccc;
-  width: 100%;
   height: 50px;
   display: flex;
   text-align: center;

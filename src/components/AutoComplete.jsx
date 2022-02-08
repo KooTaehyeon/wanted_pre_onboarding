@@ -15,7 +15,7 @@ const AutoComplete = () => {
       setOption([]);
     }
     if (inputValue !== '') {
-      // input에값이 있을떄
+      // input에 값이 있을떄
       setOption(
         data.filter((item) => {
           // 입력값이있으면 데이터더미 걸러주기

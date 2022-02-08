@@ -22,10 +22,7 @@ https://kootaehyeon.github.io/wanted_pre_onboarding./index.html
 
 1. 토글 기능 같은경우에는 그전에 만들어 본적이 있어서 빠르게 구현 할수 있었습니다
 
-2. CSS적으로 아쉬운점이라면 토글버튼이 눌리면 색변하는 부분이 좀더 자연스럽게
-   채워졌으면 좋았을거 같습니다
-
-3. js 같은 경우에는 checked 안됐을때와 됐을떄의 ON & OFF 라는 내용을
+2. js 같은 경우에는 checked 안됐을때와 됐을떄의 ON & OFF 라는 내용을
    Change 해주는거인데 useState 을 사용해 기본값을 OFF 로 주고 checked가 될떄
    값을 ON으로 Change 될수 있게 기능을 구현 했습니다.
 
@@ -86,7 +83,8 @@ https://kootaehyeon.github.io/wanted_pre_onboarding./index.html
 
 ## ClickToEdit
 
-1. useState을 이용해서 이름과 나이 의 상태값을 관리하는 변수를 2개 선언해주었습니다.
+1. useState을 이용해서 이름과 나이 의 상태값을 관리하는 변수를 2개
+   선언해주었습니다.
 
 2. onBlur 이벤트를 이용해서 포커스가 헤제 될때 input값을 이름 과 나이를
    변경할수있게했습니다
