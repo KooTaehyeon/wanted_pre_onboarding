@@ -6,7 +6,7 @@
 
 ## 배포 주소
 
-https://kootaehyeon.github.io/wanted_pre_onboarding/index.html
+https://kootaehyeon.github.io/wanted_pre_onboarding./index.html
 
 - ### 사용 기술
 
