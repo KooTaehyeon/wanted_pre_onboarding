@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 프리온보딩 프론트엔드
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- component 구조
 
-## Available Scripts
+  ![컴포넌트](https://user-images.githubusercontent.com/87509201/152639299-3a5b33a2-2051-4763-833f-042dbc35b884.png)
 
-In the project directory, you can run:
+## 배포 주소
 
-### `npm start`
+https://kootaehyeon.github.io/wanted_pre_onboarding/index.html
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ### 사용 기술
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - JavaScript
 
-### `npm test`
+  - HTML5
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - React
 
-### `npm run build`
+  - CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Toggle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. 토글 기능 같은경우에는 그전에 만들어 본적이 있어서 빠르게 구현 할수 있었습니다
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. CSS적으로 아쉬운점이라면 토글버튼이 눌리면 색변하는 부분이 좀더 자연스럽게
+   채워졌으면 좋았을거 같습니다
 
-### `npm run eject`
+3. js 같은 경우에는 checked 안됐을때와 됐을떄의 ON & OFF 라는 내용을
+   Change 해주는거인데 useState 을 사용해 기본값을 OFF 로 주고 checked가 될떄
+   값을 ON으로 Change 될수 있게 기능을 구현 했습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Modal
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. 모달 기능은 useState( Models(변수이름) ) 사용 해서 처음 값을
+   false 할당 했습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. 버튼이 눌리면 false을 할당한 Models 을 사용한 변수에 값을 true로  
+   Change 를 해주었습니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. 그후 삼항식을 이용하여 Models에 값이 true라면 모달창이 뜨게 해주었습니다
 
-## Learn More
+4. 모달창이 떠있다면 x버튼을 누르면 Models값을 false로 바꾸어 모달창을
+   닫아줄수 있게 기능구현을 했습니다.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tab
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  탭기능은 탭 1,2,3 을 해당 번호의 탭을 누를때마다 내용을 바뀌게 해주기 위해서
+    객체를 생성하여 그안에 내용 값을 넣어 주었습니다.
 
-### Code Splitting
+2.  클릭이벤트를 걸어서 해당 탭을 누르면 해당 내용 값을 담고있는 객체
+    배열값으로 보여줄수 있게 해주었습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.  useRef를 사용해서 DOM요소를 얻은후에 해당 탭을 클릭했을시에 배경색을 바꿔주고
+    나머지 탭은 배경색을 지워주게 기능을 구현 했습니다.
 
-### Analyzing the Bundle Size
+## Tag
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. useState을 사용하여 input 값을 담아줄수 있는 변수를 할당 하고
+   onChange 이벤트를 사용하여 input값을 가져 왔습니다.
 
-### Making a Progressive Web App
+2. 다시한번 useState을 이용해서 input값을 담아서 태그를 만들 변수를 할당 해놓고
+   keyUP 이벤트를 사용하여 엔터키가 눌렸을떄 태그가 생성 시킬수 있게 만들어
+   주엇습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. 태그값을 담은 변수를 맵사용해서 이벤트가 실행될떄마다 생성될수 있게
+   만들어 주었으며 그후에 X버튼을 클릭하게 된다면 해당 태그가 사라질수 있는
+   기능을 구현 하였습니다.
 
-### Advanced Configuration
+## AutoComplete
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1.  완성된 단어를 보여줄 더미 데이터를 먼저 배열변수로 만든후에 sort() 메서드를
+    이용해서 배열에 단어들을 정렬 시키고 useState 이용해서
+    input 값이 있는지 확인해주는 상태값, input 상태값, input 값과 자동완성기능 값 을 비교하는 상태값 변수를 할당해 주었습니다.
 
-### Deployment
+2.  useEffect 사용해서 input값이 있을떄는 자동완성값을 보여주고
+    input 값이 없다면 안보이게 하는 기능을 구현 했습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3.  useEffect에서 input 값과 자동완성기능 값 을 비교해서 filter() 메서드를 사용해
+    데이터 더미에서 필터된 값들을 새로운 변수를 만들어서 그 변수안에
+    필터된 값을 map()메서드를 이용해서 새로운 배열로 만들어 자동완성 단어를 보이게
+    기능 구현 해주었습니다.
+    그후에 그안에 onClick 이벤트를 만들어서 해당 자동완성 단어를 누르게되면
+    input 값이 바꿔줄수 있게 했습니다.
 
-### `npm run build` fails to minify
+4.  마지막으로 X버튼을 누르면 사용자가 적은 input 값을 지울수 있게 했습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ClickToEdit
+
+1. useState을 이용해서 이름과 나이 의 상태값을 관리하는 변수를 2개 선언해주었습니다.
+
+2. onBlur 이벤트를 이용해서 포커스가 헤제 될때 input값을 이름 과 나이를
+   변경할수있게했습니다
+
+## 구현하면서 어려웠던 점
+
+### Tag
+
+- Tag 부분에서 처음에 접근을 keyUp 이벤트후 createElement와querySelector 를
+  이용해서 엔터키가 눌리게 된다면 appendChild를 이용해서 생성 하게되고
+  그리고 그안에 remove 삭제 기능까지 넣어주었는데 생성은 잘되었지만
+  삭제가 키업을 할때마다 1개씩 밖에 지워지지 않는 상황이 되었습니다
+
+##### 해결방법
+
+- useState 와 map을 사용하여 useState에 배열의 값이 생길때마다 추가 시켜주며
+  삭제기능 이벤트도 계속 실행컨텍스트에서 찾을수 있게 되어 문제를 해결했습니다.

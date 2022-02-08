@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import Toggle from './components/Toggle';
+import Modal from './components/Modal';
+import Tab from './components/Tab';
+import Tag from './components/Tag';
+import AutoComplete from './components/AutoComplete';
+import ClickToEdit from './components/ClickToEdit';
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Toggle></Toggle>
+      <Modal></Modal>
+      <Tab></Tab>
+      <Tag></Tag>
+      <AutoComplete></AutoComplete>
+      <ClickToEdit></ClickToEdit>
     </div>
   );
 }

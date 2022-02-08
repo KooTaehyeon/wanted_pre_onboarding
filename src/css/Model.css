@@ -1,0 +1,59 @@
+.model_btn {
+  border: none;
+  background-color: #4902ce;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  margin: 100px 0px;
+}
+.model {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  opacity: 50%;
+  z-index: 10;
+  background: black;
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+}
+.model_box {
+  background-color: #fff;
+  position: absolute;
+  width: 320px;
+  height: 120px;
+  top: 40%;
+  left: 54%;
+  opacity: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 20;
+}
+.tab_ul li {
+  color: #fff;
+}
+.model_text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 10px;
+}
+.model_close {
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
