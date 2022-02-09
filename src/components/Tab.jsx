@@ -30,7 +30,6 @@ const Tab = () => {
   ];
   const onTab = (e) => {
     if (e.target.value === 1) {
-      console.log('dha');
       setModNum(0);
     } else if (e.target.value === 2) {
       setModNum(1);

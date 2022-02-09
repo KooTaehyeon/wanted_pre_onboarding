@@ -74,3 +74,12 @@
 .toggle_content span {
   font-weight: bold;
 }
+@media screen and (max-width: 520px) {
+  .toggle {
+    width: 100vw;
+    height: 100px;
+    position: relative;
+    right: 60px;
+    text-align: center;
+  }
+}

@@ -11,9 +11,7 @@ const Tag = () => {
 
   const keyUp = (e) => {
     if (window.event.keyCode === 13) {
-      // 엔터키가 눌렸을 때
-      // box.appendChild(newdiv);
-      // newdiv.appendChild(deletes);
+      // 엔터키가 눌렸을 때 실행
       setTagBox([...tagBox, tagText]);
       setTagText('');
     }
