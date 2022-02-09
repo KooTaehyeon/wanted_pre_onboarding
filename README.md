@@ -18,6 +18,12 @@ https://kootaehyeon.github.io/wanted_pre_onboarding./index.html
 
   - CSS
 
+## App
+
+![apps](https://user-images.githubusercontent.com/87509201/153185061-1037e3f3-7b8e-4611-8d33-fa6b229d5a2d.png)
+
+- 반응형 웹으로 만들어졌습니다.
+
 ## Toggle
 
 1. 토글 기능 같은경우에는 그전에 만들어 본적이 있어서 빠르게 구현 할수 있었습니다
