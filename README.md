@@ -26,6 +26,10 @@ https://kootaehyeon.github.io/wanted_pre_onboarding./index.html
    Change 해주는거인데 useState 을 사용해 기본값을 OFF 로 주고 checked가 될떄
    값을 ON으로 Change 될수 있게 기능을 구현 했습니다.
 
+- #### 결과
+
+https://user-images.githubusercontent.com/87509201/153182476-fdcf17b4-937e-4691-be18-fe93d2225e58.mp4
+
 ## Modal
 
 1. 모달 기능은 useState( Models(변수이름) ) 사용 해서 처음 값을
@@ -83,11 +87,12 @@ https://kootaehyeon.github.io/wanted_pre_onboarding./index.html
 
 ## ClickToEdit
 
-1. useState을 이용해서 이름과 나이 의 상태값을 관리하는 변수를 2개
-   선언해주었습니다.
+1. useState을 이용해서 이름과 나이 의 상태값을 관리하는 변수를 2개와
+   onBlur 이벤트를 이용해서 포커스가 헤제 될때 input값을 이름 과 나이
+   값을 바꿔주는 상태값 변수 2개 선언해주었습니다.
 
-2. onBlur 이벤트를 이용해서 포커스가 헤제 될때 input값을 이름 과 나이를
-   변경할수있게했습니다
+2. onChange 이벤트를 이용해서 input의 값이 Change 되도록 해준후에
+   onBlur를 이용해 포커스가 해지될 경우 이름과 나이가 변경 할 수 있게 했습니다
 
 ## 구현하면서 어려웠던 점
 
