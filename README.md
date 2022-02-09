@@ -43,6 +43,10 @@ https://user-images.githubusercontent.com/87509201/153182476-fdcf17b4-937e-4691-
 4. 모달창이 떠있다면 x버튼을 누르면 Models값을 false로 바꾸어 모달창을
    닫아줄수 있게 기능구현을 했습니다.
 
+- #### 결과
+
+https://user-images.githubusercontent.com/87509201/153183006-138f6550-03f0-4836-933a-1c441ca1c331.mp4
+
 ## Tab
 
 1.  탭기능은 탭 1,2,3 을 해당 번호의 탭을 누를때마다 내용을 바뀌게 해주기 위해서
@@ -53,6 +57,10 @@ https://user-images.githubusercontent.com/87509201/153182476-fdcf17b4-937e-4691-
 
 3.  useRef를 사용해서 DOM요소를 얻은후에 해당 탭을 클릭했을시에 배경색을 바꿔주고
     나머지 탭은 배경색을 지워주게 기능을 구현 했습니다.
+
+- #### 결과
+
+https://user-images.githubusercontent.com/87509201/153183233-9bed1796-86f4-4335-a151-1301a51da684.mp4
 
 ## Tag
 
@@ -66,6 +74,10 @@ https://user-images.githubusercontent.com/87509201/153182476-fdcf17b4-937e-4691-
 3. 태그값을 담은 변수를 맵사용해서 이벤트가 실행될떄마다 생성될수 있게
    만들어 주었으며 그후에 X버튼을 클릭하게 된다면 해당 태그가 사라질수 있는
    기능을 구현 하였습니다.
+
+- #### 결과
+
+https://user-images.githubusercontent.com/87509201/153183284-a730a34c-63e6-4225-8c39-f80c6ec794e1.mp4
 
 ## AutoComplete
 
@@ -85,6 +97,10 @@ https://user-images.githubusercontent.com/87509201/153182476-fdcf17b4-937e-4691-
 
 4.  마지막으로 X버튼을 누르면 사용자가 적은 input 값을 지울수 있게 했습니다.
 
+- #### 결과
+
+https://user-images.githubusercontent.com/87509201/153183316-276c362e-4681-40fd-be90-9f10a2c6d528.mp4
+
 ## ClickToEdit
 
 1. useState을 이용해서 이름과 나이 의 상태값을 관리하는 변수를 2개와
@@ -93,6 +109,10 @@ https://user-images.githubusercontent.com/87509201/153182476-fdcf17b4-937e-4691-
 
 2. onChange 이벤트를 이용해서 input의 값이 Change 되도록 해준후에
    onBlur를 이용해 포커스가 해지될 경우 이름과 나이가 변경 할 수 있게 했습니다
+
+- #### 결과
+
+https://user-images.githubusercontent.com/87509201/153183334-c2cea72c-f51e-4550-80fc-af9597c378c4.mp4
 
 ## 구현하면서 어려웠던 점
 
