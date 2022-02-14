@@ -1,0 +1,18 @@
+.edit_input {
+  border: 1px solid lightgray;
+  height: 30px;
+  margin: 0px 10px;
+  text-align: center;
+}
+.edit_input:focus-within {
+  border: 2px solid #0892aa;
+}
+.edit_form {
+  all: unset;
+}
+.form_div {
+  font-size: 20px;
+  margin: 50px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.tab_ul {
+  position: relative;
+  background-color: #ccc;
+  height: 50px;
+  display: flex;
+  text-align: center;
+}
+.tab_li {
+  position: relative;
+  list-style: none;
+  display: inline;
+  width: 95vw;
+  justify-content: space-around;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mod_text {
+  position: relative;
+  margin: 100px 0px;
+  text-align: center;
+  left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 520px) {
+  .mod_text {
+    left: 25px;
+  }
+}
