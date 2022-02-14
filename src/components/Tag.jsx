@@ -14,6 +14,7 @@ const Tag = () => {
       // 엔터키가 눌렸을 때 실행
       if (!tagText.trim()) {
         alert('공백을 허용하지않습니다.');
+        setTagText('');
         return;
       } else {
         setTagBox([...tagBox, tagText]);
